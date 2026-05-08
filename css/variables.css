@@ -1,0 +1,56 @@
+/* ============================================
+AJ-TECH — CSS Variables (Charte Graphique)
+Association des Jeunes Techniciens Haïtiens
+Fichier : css/variables.css
+Dernière mise à jour : 2025
+============================================ */
+:root {Colle ça dans :root { ... }
+/*  Couleurs Principales  */--color-navy: #1A3A6C;--color-blue: #2D6BC4;--color-light-blue: #4A90E2;--color-white: #FFFFFF;--color-gray: #F5F5F5;
+--color-blue-light: #E8F0FB;--color-cyan: #0EA5E9;/* 
+ Textes 
+ */--color-white: #FFFFFF;--color-text: #374151;--color-text-light: #6B7280;--color-gray-bg: #F3F4F6;/* 
+ États & Feedback --color-success: #16A34A;--color-error: #DC2626;--color-warning: #D97706;
+Suite de :root { ... } — Typographie/* 
+ Polices 
+ */--font-main: "Inter", sans-serif;--font-mono: "JetBrains Mono", "Courier New", monospace;/* 
+ Tailles de texte 
+ */--text-xs: 0.75rem; /* 12px — Petites notes */--text-sm: 0.875rem; /* 14px — Labels, badges */--text-base: 1rem; /* 16px — Corps de texte */--text-lg: 1.125rem; /* 18px — Texte mis en avant */--text-xl: 1.25rem; /* 20px — Sous-titres */--text-2xl: 1.5rem; /* 24px — H3 */--text-3xl: 1.875rem; /* 30px — H2 */--text-4xl: 2.25rem; /* 36px — H1 mobile */--text-5xl: 3rem; /* 48px — H1 desktop */--text-hero: 4rem; /* 64px — Titre héros *//* 
+ Poids de police --font-normal: 400;--font-medium: 500;--font-semibold: 600;--font-bold: 700;--font-extrabold: 800;/* 
+ Hauteur de ligne --leading-tight: 1.25;--leading-normal: 1.5;--leading-relaxed:1.7;
+ */Suite de :root { ... } — Espacements/* 
+ Espacements (basés sur 4px) --space-1: 0.25rem; /* 4px */
+ */--space-2: 0.5rem; /* 8px */
+
+ --space-3: 0.75rem; /* 12px */--space-4: 1rem; /* 16px */--space-5: 1.25rem; /* 20px */--space-6: 1.5rem; /* 24px */--space-8: 2rem; /* 32px */--space-10: 2.5rem; /* 40px */--space-12: 3rem; /* 48px */--space-16: 4rem; /* 64px */--space-20: 5rem; /* 80px */
+/*  Container  */--container-max: 1200px;--container-pad: 1.5rem; /* Padding horizontal */
+/*  Border Radius  */--radius-sm: 4px; /* Inputs, petits éléments */--radius-md: 8px; /* Boutons */--radius-lg: 12px; /* Cards */--radius-xl: 20px; /* Cards larges */--radius-full: 9999px; /* Pills, badges ronds */
+
+Suite et fin de :root { ... }
+/*  Ombres  */--shadow-sm: 0 1px 3px rgba(0,0,0,0.08);--shadow-md: 0 4px 12px rgba(0,0,0,0.10);--shadow-lg: 0 8px 24px rgba(0,0,0,0.12);--shadow-xl: 0 16px 48px rgba(0,0,0,0.15);
+/*  Transitions  */--transition-fast: 150ms ease;--transition-normal: 300ms ease;--transition-slow: 500ms ease;
+/*  Z-index  */--z-base: 1;--z-dropdown:10
+
+--z-header: 100;--z-modal: 1000;
+/* 
+ Dégradés AJ-TECH 
+ */--gradient-hero: linear-gradient(
+135deg,
+var(--color-navy) 0%,
+var(--color-blue) 100%
+);--gradient-card: linear-gradient(
+135deg,
+var(--color-blue-light) 0%,
+#ffffff 100%
+);
+} /* Fin de :root */
+
+Après :root { } — colle ça à la fin du fichier
+/*  Dark Mode (optionnel pour plus tard)  */
+[data-theme="dark"] {--color-navy: #0F2040;--color-blue: #4D8FD6;--color-blue-light: #1A2744;--color-white: #F8FAFC;--color-text: #E2E8F0;--color-text-light: #94A3B8;--color-gray-bg: #1E293B;
+}
+/*  Variables responsive  */
+@media (max-width: 768px) {
+:root {--text-hero: 2.5rem; /* Héros plus petit sur mobile */--text-5xl: 2rem;--container-pad: 1rem;--space-20: 3rem;
+}
+}
+
