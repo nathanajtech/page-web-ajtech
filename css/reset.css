@@ -1,0 +1,86 @@
+css/reset.css — Copie tout ce bloc
+/* ============================================
+AJ-TECH — CSS Reset
+Normalisation cross-browser
+Fichier : css/reset.css
+============================================ */
+/* 1. Box-sizing universel */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+/* 2. Base HTML et Body */
+html {
+font-size: 16px;
+scroll-behavior: smooth;-webkit-text-size-adjust: 100%;
+}
+body {
+font-family: var(--font-main);
+font-size: var(--text-base);
+color: var(--color-text);
+background-color: var(--color-white);
+line-height: var(--leading-normal);
+-webkit-font-smoothing: antialiased;
+}
+/* 3. Titres */
+h1, h2, h3, h4, h5, h6 {
+font-weight: var(--font-bold);
+line-height: var(--leading-tight);
+color: var(--color-navy);
+}
+/* 4. Paragraphes */
+p {
+line-height: var(--leading-relaxed);
+}
+/* 5. Liens */
+a {
+color: inherit;
+text-decoration: none;
+}
+/* 6. Listes */
+ul, ol {
+list-style: none;
+}
+/* 7. Images et Medias */
+img, video, svg {
+display: block;
+max-width: 100%;
+height: auto;
+}
+/* 8. Formulaires */
+button, input, select, textarea {
+font: inherit;
+color: inherit;
+background: none;
+border: none;
+outline: none;
+}
+button {
+cursor: pointer;
+}
+textarea {
+resize: vertical;
+}
+/* 9. Focus visible (accessibilite) */
+:focus-visible {
+outline: 2px solid var(--color-blue);
+outline-offset: 3px;
+}
+/* 10. Selection de texte */
+::selection {
+background-color: var(--color-blue);
+color: var(--color-white);
+}
+/* 11. Scrollbar (Chrome/Edge) */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--color-gray-bg); }
+::-webkit-scrollbar-thumb {
+background: var(--color-blue);
+border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+background: var(--color-navy);
+}
