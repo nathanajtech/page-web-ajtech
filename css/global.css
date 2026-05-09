@@ -1,0 +1,154 @@
+
+/* ============================================
+AJ-TECH — Styles Globaux
+Fichier : css/global.css
+============================================ */
+/* 1. Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+/* 2. Container principal */
+.container {
+width: 100%;
+max-width: var(--container-max);
+margin: 0 auto;
+padding: 0 var(--container-pad);
+}
+.section { padding: var(--space-20) 0; }
+.section-sm { padding: var(--space-12) 0; }
+.section-title {
+font-size: var(--text-3xl);
+font-weight: var(--font-bold);
+color: var(--color-navy);
+text-align: center;
+margin-bottom: var(--space-4);
+}
+.section-subtitle {
+font-size: var(--text-lg);
+color: var(--color-text-light);
+text-align: center;
+max-width: 600px;
+margin: 0 auto var(--space-12);
+line-height: var(--leading-relaxed);
+}
+/* 3. Utilitaires Flexbox */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+/* Utilitaires Grid */
+.grid { display: grid; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+/* Gap */
+.gap-2 { gap: var(--space-2); }
+.gap-4 { gap: var(--space-4); }
+.gap-6 { gap: var(--space-6); }
+.gap-8 { gap: var(--space-8); }
+/* Texte */
+.text-center { text-align: center; }
+.text-white { color: var(--color-white); }
+.text-navy { color: var(--color-navy); }
+.text-blue { color: var(--color-blue); }
+.text-light { color: var(--color-text-light); }
+/* Largeurs */
+.w-full { width: 100%; }
+/* 4. Boutons */
+.btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: var(--space-2);
+padding: var(--space-3) var(--space-6);
+border-radius: var(--radius-md);
+font-size: var(--text-base);
+font-weight: var(--font-semibold);
+cursor: pointer;
+transition: all var(--transition-normal);
+white-space: nowrap;
+text-decoration: none;
+border: 2px solid transparent;
+}
+.btn-primary {
+background-color: var(--color-blue);
+color: var(--color-white);
+border-color: var(--color-blue);
+}
+.btn-primary:hover {
+background-color: var(--color-navy);
+border-color: var(--color-navy);
+transform: translateY(-2px);
+box-shadow: var(--shadow-lg);
+}
+.btn-secondary {
+background-color: var(--color-navy);
+color: var(--color-white);
+}
+.btn-secondary:hover {
+background-color: var(--color-blue);
+transform: translateY(-2px);
+}
+.btn-outline {
+background: transparent;
+color: var(--color-blue);
+border-color: var(--color-blue);
+}
+.btn-outline:hover {
+background: var(--color-blue);
+color: var(--color-white);
+}
+.btn-outline-white {
+background: transparent;
+color: var(--color-white);
+border-color: var(--color-white);
+}
+.btn-outline-white:hover {
+background: var(--color-white);
+color: var(--color-navy);
+}
+.btn-sm { padding: var(--space-2) var(--space-4); font-size: var(--text-sm); }
+.btn-lg { padding: var(--space-4) var(--space-8); font-size: var(--text-lg); }
+/* 5. Badges */
+.badge {
+display: inline-flex;
+align-items: center;
+padding: var(--space-1) var(--space-3);
+border-radius: var(--radius-full);
+font-size: var(--text-sm);
+font-weight: var(--font-medium);
+}
+.badge-blue { background: var(--color-blue-light); color: var(--color-blue); }
+.badge-navy { background: var(--color-navy); color: var(--color-white); }
+.badge-success { background: #DCFCE7; color: var(--color-success); }
+.badge-warning { background: #FEF3C7; color: var(--color-warning); }
+.badge-cyan { background: #E0F2FE; color: var(--color-cyan); }
+/* 6. Cards */
+.card {
+background: var(--color-white);
+border-radius: var(--radius-lg);
+box-shadow: var(--shadow-md);
+padding: var(--space-6);
+transition: transform var(--transition-normal),
+box-shadow var(--transition-normal);
+}
+.card:hover {
+transform: translateY(-4px);
+box-shadow: var(--shadow-xl);
+}
+.card-blue {
+background: var(--color-blue-light);
+border: 1px solid rgba(45,107,196,0.15);
+}
+/* 7. Separateurs et fonds */
+.divider {
+width: 60px;
+height: 4px;
+background: var(--gradient-hero);
+border-radius: var(--radius-full);
+margin: var(--space-4) auto;
+}
+.bg-light { background-color: var(--color-gray-bg); }
+.bg-blue { background-color: var(--color-blue-light); }
+.bg-dark { background-color: var(--color-navy); }
