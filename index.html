@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+content="AJ-TECH - Association des Jeunes Techniciens Haitiens">
+<meta property="og:title" content="AJ-TECH">
+<meta property="og:image" content="images/og-image.jpg">
+<title>AJ-TECH | Association des Jeunes Techniciens Haitiens</title>
+<!-- CSS dans l ordre exact -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Font Awesome icones -->
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header id="main-header" class="header">
+<nav class="nav container">
+<!-- Logo -->
+<a href="index.html" class="nav-logo">
+<img src="images/ajtech-logo.png" alt="AJ-TECH Logo" height="40">
+<span>AJ-TECH</span>
+</a>
+<!-- Liens navigation -->
+<ul class="nav-links" id="nav-links">
+<li><a href="index.html" class="nav-link active">Accueil</a></li>
+<li><a href="about.html" class="nav-link">A Propos</a></li>
+<li><a href="project.html" class="nav-link">Notre Projet</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+</ul>
+<!-- Actions droite -->
+<div class="nav-actions">
+<div class="lang-selector">
+<button class="lang-btn" id="lang-btn">
+<i class="fa-solid fa-globe"></i>
+<span id="current-lang">FR</span>
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+<ul class="lang-dropdown" id="lang-dropdown">
+<li><button onclick="setLang('fr')">Francais</button></li>
+<li><button onclick="setLang('en')">English</button></li>
+<li><button onclick="setLang('ht')">Kreyol</button></li>
+<li><button onclick="setLang('es')">Espanol</button></li>
+</ul>
+</div>
+<a href="contact.html" class="btn btn-primary btn-sm">
+Nous Contacter
+</a>
+<button class="burger" id="burger" aria-label="Menu">
+<span></span><span></span><span></span>
+</button>
+</div>
+</nav>
+</header>
+<main>
+<section class="hero" id="hero">
+<div class="hero-container container">
+<!-- Texte -->
+<div class="hero-content">
+<span class="badge badge-cyan">Fondee en 2025</span>
+<h1 class="hero-title">
+Construire l'Avenir
+<span class="hero-title-accent">Numerique d'Haiti</span>
+</h1>
+<p class="hero-subtitle">
+AJ-TECH developpe des solutions technologiques
+adaptees a la realite haitienne.
+</p>
+<div class="hero-actions">
+<a href="project.html" class="btn btn-primary btn-lg">
+Decouvrir Notre Projet
+</a>
+<a href="contact.html" class="btn btn-outline-white btn-lg">
+Nous Contacter
+</a>
+</div>
+</div>
+<!-- Visuel decoratif -->
+<div class="hero-visual">
+<div class="hero-card">
+<i class="fa-solid fa-microchip"></i>
+<p>Innovation</p>
+</div>
+<div class="hero-card hero-card-2">
+<i class="fa-solid fa-code"></i>
+<p>Technologie</p>
+</div>
+<div class="hero-card hero-card-3">
+<i class="fa-solid fa-users"></i>
+<p>Communaute</p>
+</div>
+</div>
+</div>
+</section>
+<!-- STATS -->
+<section class="stats section-sm bg-light">
+<div class="container">
+<div class="stats-grid">
+<div class="stat-item">
+<span class="stat-number">2025</span>
+<span class="stat-label">Annee de fondation</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">1</span>
+<span class="stat-label">Projet actif</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">Haiti</span>
+<span class="stat-label">Notre base</span>
+</div>
+</div>
+</div>
+</section>
+<!-- PROJET PHARE -->
+<section class="featured-project section">
+<div class="container">
+<h2 class="section-title">Notre Projet Phare</h2>
+<p class="section-subtitle">Un projet concret en cours de developpement</p>
+<div class="project-card card">
+<div class="project-card-header">
+<div class="project-icon">
+<i class="fa-solid fa-comments"></i>
+</div>
+<div>
+<h3>AJ-Chat</h3>
+<span class="badge badge-warning">En developpement</span>
+</div>
+</div>
+<p>Messagerie instantanee securisee pour la communaute haitienne.</p>
+<a href="project.html" class="btn btn-primary">En savoir plus</a>
+</div>
+</div>
+</section>
+<!-- A PROPOS (resume) -->
+<section class="about-preview section bg-light">
+<div class="container">
+<h2 class="section-title">Qui Sommes-Nous ?</h2>
+<div class="values-grid grid grid-3 gap-6">
+<div class="value-card card text-center">
+<i class="fa-solid fa-lightbulb"></i>
+<h3>Innovation</h3>
+<p>Des solutions creatives aux problemes locaux</p>
+</div>
+<div class="value-card card text-center">
+<i class="fa-solid fa-users"></i>
+<h3>Communaute</h3>
+<p>Au service de la population haitienne</p>
+</div>
+<div class="value-card card text-center">
+<i class="fa-solid fa-star"></i>
+<h3>Excellence</h3>
+<p>La qualite avant tout dans chaque projet</p>
+</div>
+</div>
+<div class="text-center" style="margin-top:2rem">
+<a href="about.html" class="btn btn-secondary">En savoir plus</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer bg-dark">
+<div class="footer-container container">
+<div class="footer-brand">
+<a href="index.html" class="footer-logo">
+<img src="images/ajtech-logo.png" alt="AJ-TECH" height="36">
+<span>AJ-TECH</span>
+</a>
+<p>Solutions numeriques pour Haiti</p>
+</div>
+<div class="footer-links">
+<h4>Liens Rapides</h4>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="about.html">A Propos</a></li>
+<li><a href="project.html">Projet</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer-contact">
+<h4>Contact</h4>
+<a href="mailto:ajtech1991@gmail.com">
+<i class="fa-solid fa-envelope"></i> ajtech1991@gmail.com
+</a>
+<a href="https://wa.me/50937142870" target="_blank">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+<div class="footer-social">
+<h4>Suivre AJ-TECH</h4>
+<div class="social-links">
+<a href="#" aria-label="Facebook">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+<a href="#" aria-label="Instagram">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a href="#" aria-label="LinkedIn">
+<i class="fa-brands fa-linkedin-in"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2025 AJ-TECH. Tous droits reserves.</p>
+<a href="legal.html">Mentions legales</a>
+</div>
+</footer>
+<!-- Scripts JS (toujours en dernier dans body) -->
+<script src="js/utils.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
