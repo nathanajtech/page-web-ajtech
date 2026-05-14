@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contacter AJ-TECH - WhatsApp et formulaire">
+<title>Contact | AJ-TECH</title>
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Header : copie depuis index.html, active "Contact" -->
+<main>
+<!-- HERO CONTACT -->
+<section class="page-hero">
+<div class="container text-center">
+<h1 class="page-hero-title">Nous Contacter</h1>
+<p class="page-hero-subtitle">
+Une question ? Un projet ? On est la pour vous.
+</p>
+</div>
+</section>
+<!-- SECTION CONTACT -->
+<section class="section">
+<div class="container">
+<div class="contact-grid">
+<!-- Colonne gauche : infos directes -->
+<div class="contact-info">
+<h2>Contactez-nous directement</h2>
+<!-- WhatsApp — CONTACT PRINCIPAL -->
+<div class="contact-item contact-item-primary">
+<div class="contact-icon contact-icon-whatsapp">
+<i class="fa-brands fa-whatsapp"></i>
+</div>
+<div>
+<h3>WhatsApp</h3>
+<p>Reponse rapide en moins de 24h</p>
+<a href="https://wa.me/50937142870" target="_blank"
+class="btn btn-success">
+<i class="fa-brands fa-whatsapp"></i>
+Ecrire sur WhatsApp
+</a>
+</div>
+</div>
+<!-- Email — Placeholder pour email pro futur -->
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fa-solid fa-envelope"></i>
+</div>
+<div>
+<h3>Email</h3>
+<!-- REMPLACE PLACEHOLDER_EMAIL par contact@ajtech.ht
+quand tu auras ton domaine professionnel -->
+<p>PLACEHOLDER_EMAIL</p>
+</div>
+</div>
+<!-- Localisation -->
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+<div>
+<h3>Localisation</h3>
+<p>Haiti &amp; Diaspora mondiale</p>
+</div>
+</div>
+</div>
+<!-- Colonne droite : formulaire -->
+<div class="contact-form-wrap">
+<h2>Envoyer un message</h2>
+<!-- Formulaire Formspree -->
+<!-- Remplace TON-ID-FORMSPREE par ton vrai ID apres inscription -->
+<form class="contact-form" id="contact-form"
+action="https://formspree.io/f/TON-ID-FORMSPREE"
+method="POST">
+<div class="form-group">
+<label for="name">Nom complet *</label>
+<input type="text" id="name" name="name"
+placeholder="Jonathan Germain" required>
+</div>
+<div class="form-group">
+<label for="email">Votre email *</label>
+<input type="email" id="email" name="email"
+placeholder="votre@email.com" required>
+</div>
+<div class="form-group">
+<label for="subject">Sujet *</label>
+<select id="subject" name="subject" required>
+<option value="">Choisir un sujet</option>
+<option value="partenariat">Partenariat</option>
+<option value="ajtask">Question sur AJ-TASK</option>
+<option value="collaboration">Collaboration</option>
+<option value="autre">Autre</option>
+</select>
+</div>
+<div class="form-group">
+<label for="message">Message *</label>
+<textarea id="message" name="message" rows="5"
+placeholder="Votre message..." required></textarea>
+</div>
+<!-- Honeypot anti-spam -->
+<label for="_gotcha" style="display:none">Ne pas remplir si vous êtes humain</label>
+<input type="text" id="_gotcha" name="_gotcha" style="display:none">
+<button type="submit" class="btn btn-primary w-full"
+id="submit-btn">
+<i class="fa-solid fa-paper-plane"></i>
+Envoyer le message
+</button>
+<!-- Message de confirmation -->
+<div class="form-success" id="form-success" style="display:none">
+<i class="fa-solid fa-circle-check"></i>
+Message envoye ! On vous repond sous 24h.
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer : copie depuis index.html -->
+<script src="js/utils.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
