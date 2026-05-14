@@ -1,0 +1,140 @@
+/* ============================================
+AJ-TECH — Header & Navigation
+Fichier : css/header.css
+============================================ */
+/* Header principal */
+.header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: var(--z-header);
+background: rgba(255, 255, 255, 0.97);
+backdrop-filter: blur(10px);
+border-bottom: 2px solid transparent;
+transition: all var(--transition-normal);
+}
+/* Header scrollé — ombre + bordure bleue */
+.header.scrolled {
+box-shadow: var(--shadow-md);
+border-bottom: 2px solid var(--color-haiti-blue);
+}
+.nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 70px;
+}
+/* Logo */
+.nav-logo {
+display: flex;
+align-items: center;
+gap: var(--space-3);
+font-size: var(--text-xl);
+font-weight: var(--font-extrabold);
+color: var(--color-haiti-blue);
+letter-spacing: 1px;
+}
+.nav-logo img { height: 40px; width: auto; }
+.nav-logo span { color: var(--color-haiti-blue); }
+.nav-logo span span { color: var(--color-haiti-red); }
+/* Liens navigation */
+.nav-links {
+display: flex;
+align-items: center;
+gap: var(--space-8);
+}
+.nav-link {
+font-size: var(--text-sm);
+font-weight: var(--font-medium);
+color: var(--color-text);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+position: relative;
+padding-bottom: 4px;
+transition: color var(--transition-fast);
+}
+.nav-link::after {
+content: "";
+position: absolute;
+bottom: 0; left: 0;
+width: 0; height: 2px;
+background: var(--gradient-accent);
+transition: width var(--transition-normal);
+}
+.nav-link:hover,
+.nav-link.active {
+color: var(--color-haiti-blue);
+}
+.nav-link:hover::after,
+.nav-link.active::after { width: 100%; }
+/* Actions droite */
+.nav-actions {
+display: flex;
+align-items: center;
+gap: var(--space-4);
+}
+/* Sélecteur de langue */
+.lang-selector { position: relative; }
+.lang-btn {
+display: flex;
+align-items: center;
+gap: var(--space-1);
+font-size: var(--text-sm);
+font-weight: var(--font-medium);
+color: var(--color-text);
+padding: var(--space-2) var(--space-3);
+border-radius: var(--radius-md);
+transition: background var(--transition-fast);
+}
+.lang-btn:hover { background: var(--color-blue-light); }
+.lang-dropdown {
+position: absolute;
+top: calc(100% + 8px);
+right: 0;
+background: var(--color-white);
+border-radius: var(--radius-md);
+box-shadow: var(--shadow-lg);
+min-width: 130px;
+overflow: hidden;
+opacity: 0;
+visibility: hidden;
+transform: translateY(-8px);
+transition: all var(--transition-normal);
+border-top: 3px solid var(--color-haiti-blue);
+}
+.lang-dropdown.open {
+opacity: 1; visibility: visible; transform: translateY(0);
+}
+.lang-dropdown li button {
+width: 100%;
+text-align: left;
+padding: var(--space-3) var(--space-4);
+font-size: var(--text-sm);
+color: var(--color-text);
+transition: background var(--transition-fast);
+}
+.lang-dropdown li button:hover {
+background: var(--color-blue-light);
+color: var(--color-haiti-blue);
+}
+/* Burger menu mobile */
+.burger {
+display: none;
+flex-direction: column;
+gap: 5px;
+padding: var(--space-2);
+cursor: pointer;
+}
+.burger span {
+display: block;
+width: 24px; height: 2px;
+background: var(--color-navy);
+border-radius: 2px;
+transition: all var(--transition-normal);
+}
+.burger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+/* Espace pour compenser le header fixed */
+body { padding-top: 70px; }
