@@ -1,0 +1,43 @@
+{
+"nav": {
+"home": "Akèy",
+"about": "Sou Nou",
+"project": "Pwojè Nou",
+"contact": "Kontakte Nou"
+},
+"hero": {
+"badge": "Fonde an 2025",
+"title": "Bati Avni Nimerik Ayiti",
+"subtitle": "AJ-TECH devlope solisyon teknolojik ki adapte ak reyalite ayisyen.",
+"cta1": "Dekouvri Pwojè Nou",
+"cta2": "Kontakte Nou"
+},
+"stats": {
+"founded": "Ane fondayon",
+"projects": "Pwojè aktif",
+"location": "Kote nou ye"
+},
+"project": {
+"title": "Pwojè Nou",
+"subtitle": "Sa n'ap konstwi pou Ayiti"
+},
+"about": {
+"title": "Ki Moun Nou Ye?",
+"subtitle": "Jèn ki pasyone ak teknoloji",
+"cta": "Aprann plis sou AJ-TECH"
+},
+"values": {
+"innovation": "Inovasyon",
+"innovation.desc": "Solisyon kreyatif pou defi lokal yo",
+"community": "Kominote",
+"community.desc": "Sèvi pèp ayisyen an",
+"excellence": "Ekselans",
+"excellence.desc": "Kalite dabò nan chak pwojè"
+},
+"footer": {
+"desc": "Solisyon nimerik pou Ayiti",
+"links": "Lyen Rapid",
+"contact": "Kontakte",
+"follow": "Swiv AJ-TECH"
+}
+}

@@ -1,0 +1,43 @@
+{
+"nav": {
+"home": "Accueil",
+"about": "A Propos",
+"project": "Notre Projet",
+"contact": "Contact"
+},
+"hero": {
+"badge": "Fondee en 2025",
+"title": "Construire l'Avenir Numerique d'Haiti",
+"subtitle": "AJ-TECH developpe des solutions technologiques adaptees a la realite\nhaitienne.",
+"cta1": "Decouvrir Notre Projet",
+"cta2": "Nous Contacter"
+},
+"stats": {
+"founded": "Annee de fondation",
+"projects": "Projet actif",
+"location": "Notre base"
+},
+"project": {
+"title": "Nos Projets",
+"subtitle": "Ce que nous construisons pour Haiti"
+},
+"about": {
+"title": "Qui Sommes-Nous ?",
+"subtitle": "Des jeunes passionnes par la technologie",
+"cta": "En savoir plus sur AJ-TECH"
+},
+"values": {
+"innovation": "Innovation",
+"innovation.desc": "Des solutions creatives aux defis locaux",
+"community": "Communaute",
+"community.desc": "Au service de la population haitienne",
+"excellence": "Excellence",
+"excellence.desc": "La qualite avant tout dans chaque projet"
+},
+"footer": {
+"desc": "Solutions numeriques pour Haiti",
+"links": "Liens Rapides",
+"contact": "Contact",
+"follow": "Suivre AJ-TECH"
+}
+}
