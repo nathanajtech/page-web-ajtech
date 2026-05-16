@@ -1,0 +1,6 @@
+# AJ-TECH — robots.txt
+# Autorise tous les moteurs de recherche
+User-agent: *
+Allow: /
+# Localisation du sitemap
+Sitemap: https://nathanajtech.github.io/page-web-ajtech/sitemap.xml
